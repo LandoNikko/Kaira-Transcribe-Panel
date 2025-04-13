@@ -29,11 +29,17 @@ Kaira Transcribe Panel is a web app for local and cloud transcription (STT: spee
   - Elevenlabs Scribe v1
 - **Transcript Outputs:** Paragraphs, Segments, SRT, VTT and TSV.
 - **Media Sync:** Built-in audio/video player with waveform, real-time paragraph highlighting synced to playback and click-to-seek transcript.
-- **Personalization:** From light mode to dark modes and cute (E Ink, Nova, Minty, Toffee).
+- **Themes:** From light mode to dark modes and cute (E Ink, Nova, Minty, Toffee).
 - **Queue Support**
   - Add/remove and transcribe multiple files.
 - **Price Calculator:** Estimates API costs for cloud models.
 - **Convenience:** Copy/download results, notifications, word/character stats.
+
+| Nova | Minty |
+|:----:|:-----:|
+| ![E Ink](https://github.com/user-attachments/assets/0f14eb9c-9302-4b29-bdbe-5a4f47f5547c) | ![Nova](https://github.com/user-attachments/assets/91b3fc27-2354-41f1-b7a2-f124b1df3839) | 
+| E Ink | Toffee |
+| ![Minty](https://github.com/user-attachments/assets/2655da4d-6ca0-4dc7-9a1a-a6a24c42e341) | ![Toffee](https://github.com/user-attachments/assets/b2f3ba76-b3b7-471e-a1b7-5ef104ffa45f) | 
 
 ## Installation
 
