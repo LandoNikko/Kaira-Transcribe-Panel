@@ -35,10 +35,10 @@ Kaira Transcribe Panel is a web app for local and cloud transcription (STT: spee
 - **Price Calculator:** Estimates API costs for cloud models.
 - **Convenience:** Copy/download results, notifications, word/character stats.
 
-| Nova | Minty |
+| E Ink | Nova |
 |:----:|:-----:|
 | ![E Ink](https://github.com/user-attachments/assets/0f14eb9c-9302-4b29-bdbe-5a4f47f5547c) | ![Nova](https://github.com/user-attachments/assets/2655da4d-6ca0-4dc7-9a1a-a6a24c42e341) | 
-| E Ink | Toffee |
+| Minty | Toffee |
 | ![Minty](https://github.com/user-attachments/assets/91b3fc27-2354-41f1-b7a2-f124b1df3839) | ![Toffee](https://github.com/user-attachments/assets/b2f3ba76-b3b7-471e-a1b7-5ef104ffa45f) | 
 
 ## Installation
