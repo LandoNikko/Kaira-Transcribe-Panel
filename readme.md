@@ -122,6 +122,7 @@ To transcribe with **Whisper-1**, **Deepgram**, or **Gladia**:
 - [OpenAI](https://platform.openai.com/account/api-keys)
 - [Deepgram](https://console.deepgram.com/signup)
 - [Gladia](https://gladia.io)
+- [ElevenLabs]([https://gladia.io](https://elevenlabs.io/app/settings/api-keys))
 
 ## Roadmap
 
