@@ -1,6 +1,6 @@
 # Kaira Transcribe Panel
 
-Kaira Transcribe Panel is a web app for local and cloud transcription (STT: speech-to-text) models. It's a privacy-conscious tool for transcribing audio/video files using OpenAI's open-source Whisper models, as well as offering cloud options (OpenAI, Deepgram, Gladia, ElevenLabs) where you use your own API key. Compare each model's output speed, quality and pricing. Think of this like [Automatic1111](https://github.com/AUTOMATIC1111/stable-diffusion-webui), but made for transcriptions.
+Kaira Transcribe Panel is a web app for local and cloud transcription (STT: speech-to-text) models. It's a privacy-conscious tool for transcribing audio/video files using OpenAI's open-source Whisper models, as well as offering cloud options (OpenAI, Deepgram, Gladia, ElevenLabs) where you use your own API key. Compare each model's output speed, quality and pricing. Think of this like local Gen AI interfaces, like [Automatic1111](https://github.com/AUTOMATIC1111/stable-diffusion-webui), but made for transcriptions.
 
 ![Image](https://github.com/user-attachments/assets/25cf5827-1fed-4d17-8a44-f09f64f9a64e)
 
@@ -132,7 +132,7 @@ To transcribe with **Whisper-1**, **Deepgram**, or **Gladia**:
 - Explore in-browser-only Whisper execution (e.g., ONNX, Transformers.js).
 - Accessibility (ARIA-compliant components).
 - Eliminate the external CDN requirement to bundle WaveSurfer.js locally (so you don't need an internet connection to see the audio player).
-- Modular plugin-style cloud support (like A1111 extensions) to keep local version minimal by default.
+- Modular plugin-style cloud support to keep local version minimal by default.
 
 
 ## Contributing
@@ -165,4 +165,4 @@ Please also feel free to open **Issues** for bug reports, feature requests, feed
 - [WaveSurfer.js](https://wavesurfer-js.org/)
 - [Flask](https://flask.palletsprojects.com/) + [Flask-SocketIO](https://flask-socketio.readthedocs.io/)
 - [Remix Icon](https://remixicon.com/)
-- APIs: OpenAI, Deepgram, Gladia
+- APIs: OpenAI, Deepgram, Gladia & ElevenLabs
