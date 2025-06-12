@@ -1,170 +1,80 @@
+[![GitHub][github-shield]][github-url] [![License][license-shield]][license-url]   [![Email][gmail-shield]][gmail-url] ![Discord: landomrandom Status][discord-shield-static]
+
+[github-shield]: https://img.shields.io/badge/GitHub-121727?style=for-the-badge&color=080c19&logo=github&logoColor=00c6ff
+[github-url]: [https://github.com/LandoNikko/Pilko-Frame-Capture-Studio](https://github.com/LandoNikko/Kaira-Transcribe-Panel)
+
+[license-shield]: https://img.shields.io/badge/License-MIT-121727?style=for-the-badge&labelColor=080c19&messageColor=e0e6f7&logo=gnu&logoColor=00c6ff
+[license-url]: LICENSE
+
+[gmail-shield]: https://img.shields.io/badge/Email-00c6ff?style=for-the-badge&color=080c19&logo=gmail&logoColor=00c6ff
+[gmail-url]: landonikko@gmail.com
+
+[discord-shield-static]: https://img.shields.io/badge/Discord-landomrandom-121727?style=for-the-badge&labelColor=080c19&messageColor=e0e6f7&logo=discord&logoColor=00c6ff
+
 # Kaira Transcribe Panel
 
-Kaira Transcribe Panel is a web app for local and cloud transcription (STT: speech-to-text) models. It's a privacy-conscious tool for transcribing audio/video files using OpenAI's open-source Whisper models, as well as offering cloud options (OpenAI, Deepgram, Gladia, ElevenLabs) where you use your own API key. Compare each model's output speed, quality and pricing.
+Kaira Transcribe Panel is a web app for local & cloud speech-to-text (STT) using Whisper models and major cloud APIs (using your own API Key). Compare model speed, quality and pricing.
 
 Try it here: https://landonikko.github.io/Kaira-Transcribe-Panel
 
 ![Image](https://github.com/user-attachments/assets/25cf5827-1fed-4d17-8a44-f09f64f9a64e)
 
----
+## ![Features Shield][features-shield]
 
-## Table of Contents
+- **Local Models:** Tiny, Base, Small, Medium, Turbo, Large (via `openai-whisper`).
+- **Cloud Models (BYOK):** OpenAI (Whisper-1, GPT-4o Mini, GPT-4o), Deepgram Nova-3 (Summarization & Topics), Gladia (EN), ElevenLabs Scribe v1.
+- **Outputs:** Paragraphs, Segments, SRT, VTT, TSV.
+- **Media Sync:** Player with waveform, real-time highlighting, click-to-seek.
+- **Themes:** E Ink, Nova, Minty, Toffee.
+- **Queue Support:** Batch processing.
+- **Price Calculator:** Estimates API costs.
+- **Utilities:** Copy/download, notifications, stats.
 
-- [Features Overview](#features-overview)
-- [Installation](#installation)
-- [Launching the App](#launching-the-app)
-- [Cloud Models](#cloud-models)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License & Credits](#license--credits)
-
-## Features Overview
-
-- **Local Models** (via `openai-whisper`):
-  - Tiny, Base, Small, Medium, Turbo and Large.
-- **Cloud Models (BYOK — Bring Your Own Key):**
-  - OpenAI Whisper-1
-  - OpenAI gpt-4o-mini-transcribe
-  - OpenAI gpt-4o-transcribe
-  - Deepgram Nova-3 *(Summarization & Topic Detection supported)*
-  - Gladia *(English-only for now)*
-  - Elevenlabs Scribe v1
-- **Transcript Outputs:** Paragraphs, Segments, SRT, VTT and TSV.
-- **Media Sync:** Built-in audio/video player with waveform, real-time paragraph highlighting synced to playback and click-to-seek transcript.
-- **Themes:** From light mode to dark modes and cute (E Ink, Nova, Minty, Toffee).
-- **Queue Support**
-  - Add/remove and transcribe multiple files.
-- **Price Calculator:** Estimates API costs for cloud models.
-- **Convenience:** Copy/download results, notifications, word/character stats.
+[features-shield]: https://img.shields.io/badge/Features-5f43f2?style=for-the-badge&color=0b0b0b
 
 | E Ink | Nova |
 |:----:|:-----:|
-| ![E Ink](https://github.com/user-attachments/assets/0f14eb9c-9302-4b29-bdbe-5a4f47f5547c) | ![Nova](https://github.com/user-attachments/assets/2655da4d-6ca0-4dc7-9a1a-a6a24c42e341) | 
+| ![E Ink](https://github.com/user-attachments/assets/0f14eb9c-9302-4b29-bdbe-5a4f47f5547c) | ![Nova](https://github.com/user-attachments/assets/2655da4d-6ca0-4dc7-9a1a-a6a24c42e341) |
 | Minty | Toffee |
-| ![Minty](https://github.com/user-attachments/assets/91b3fc27-2354-41f1-b7a2-f124b1df3839) | ![Toffee](https://github.com/user-attachments/assets/b2f3ba76-b3b7-471e-a1b7-5ef104ffa45f) | 
+| ![Minty](https://github.com/user-attachments/assets/91b3fc27-2354-41f1-b7a2-f124b1df3839) | ![Toffee](https://github.com/user-attachments/assets/b2f3ba76-b3b7-471e-a1b7-5ef104ffa45f) |
 
-## Installation
+## ![Installation Shield][installation-shield]
 
-### 1. Clone and Enter the Project Directory
+1.  **Clone:** `git clone https://github.com/kairauser/KairaTranscribePanel.git && cd KairaTranscribePanel`
+2.  **Python & PyTorch:** Python 3.8+. Install PyTorch from [pytorch.org](https://pytorch.org).
+3.  **FFmpeg:**
+    -   macOS: `brew install ffmpeg`
+    -   Ubuntu/Debian: `sudo apt install ffmpeg`
+    -   Windows: Download from [ffmpeg.org](https://ffmpeg.org/download.html) & add to PATH.
+4.  **Dependencies:** `pip install -r requirements.txt`
 
-```bash
-git clone https://github.com/kairauser/KairaTranscribePanel.git
-cd KairaTranscribePanel
-```
+[installation-shield]: https://img.shields.io/badge/Installation-5f43f2?style=for-the-badge&color=0b0b0b
 
-### 2. Install Python + Dependencies
+## ![Usage Shield][usage-shield]
 
-- Use **Python 3.8+**
-- Install **PyTorch** for your system: [https://pytorch.org](https://pytorch.org)
+1.  **Run:** `python Launch_Kaira.py`
+2.  **Open:** `http://localhost:5000` in your browser.
+3.  **Cloud API Keys:** Paste into UI when prompted (stored in browser localStorage).
+    -   [OpenAI](https://platform.openai.com/account/api-keys)
+    -   [Deepgram](https://console.deepgram.com/signup)
+    -   [Gladia](https://gladia.io)
+    -   [ElevenLabs](https://elevenlabs.io/app/settings/api-keys)
 
-### ffmpeg
+[usage-shield]: https://img.shields.io/badge/Usage-5f43f2?style=for-the-badge&color=0b0b0b
 
-To enable audio/video processing, install **ffmpeg**:
+## ![Roadmap Shield][roadmap-shield]
 
-- **macOS:**
-  ```bash
-  brew install ffmpeg
-  ```
-- **Ubuntu/Debian:**
-  ```bash
-  sudo apt install ffmpeg
-  ```
-- **Windows:**
-  Download from [ffmpeg.org](https://ffmpeg.org/download.html) and add it to your system PATH.
+-   Translation features (API & LLM).
+-   Additional transcription models.
+-   In-browser Whisper (ONNX, Transformers.js).
+-   ARIA compliance.
+-   Local WaveSurfer.js bundling.
+-   Modular cloud support.
 
-### Other Python dependencies
+[roadmap-shield]: https://img.shields.io/badge/Roadmap-5f43f2?style=for-the-badge&color=0b0b0b
 
-```bash
-pip install -r requirements.txt
-```
+## ![Contributing Shield][contributing-shield]   [![License][license-shield]][license-url]
 
-> Sample `requirements.txt`:
-> ```
-> Flask
-> Flask-SocketIO
-> openai-whisper
-> openai
-> requests
-> torch
-> ```
+Contributions, bug reports, and feature requests are welcome! Fork the repo, create a branch, make changes, test, commit, push, and open a Pull Request.
 
-### Project Structure
-
-```
-Kaira_Transcribe_Panel/
-├── temp/                    # Processing/transcribing files are temporarily stored here
-├── Kaira_Transcribe_Panel.html  # Local interface
-├── Launch_Kaira.py         # Launcher script for the app
-├── readme.md               # Project documentation
-├── requirements.txt        # Python dependencies
-```
-
-## Launching the App
-
-### 1. Run
-
-```bash
-python Launch_Kaira.py
-```
-
-### 2. Open the Web App
-
-Visit `http://localhost:5000` in your browser.
-
-## Cloud Models
-
-To transcribe with **Whisper-1**, **Deepgram**, or **Gladia**:
-
-- Paste your API key when prompted in the UI.
-- API keys are stored **only** in your **browser's localStorage**.
-- You can remove them anytime by clearing your browser storage.
-
-### Where to Get API Keys
-
-- [OpenAI](https://platform.openai.com/account/api-keys)
-- [Deepgram](https://console.deepgram.com/signup)
-- [Gladia](https://gladia.io)
-- [ElevenLabs]([https://gladia.io](https://elevenlabs.io/app/settings/api-keys))
-
-## Roadmap
-
-- Better documentation
-- Translation -tab with different options (API provider's offers and LLM workflow integration).
-- New transcription models, local and cloud.
-- Explore in-browser-only Whisper execution (e.g., ONNX, Transformers.js).
-- Accessibility (ARIA-compliant components).
-- Eliminate the external CDN requirement to bundle WaveSurfer.js locally (so you don't need an internet connection to see the audio player).
-- Modular plugin-style cloud support to keep local version minimal by default.
-
-
-## Contributing
-
-This project is a personal hobby project and under active development. While it's not a full-fledged product, contributions are very welcome if you find the tool useful or want to help it evolve.
-
-We follow a simple and open workflow:
-
-1. **Fork the repository.**
-2. **Create a new branch** for your feature or bug fix: `git checkout -b feature/your-feature-name` or `git checkout -b fix/your-bug-fix`.
-3. **Make your changes.** Try to keep things consistent with the UI/UX.
-4. **Test your changes thoroughly.**
-5. **Commit your changes:** `git commit -m "Add concise description of changes"`.
-6. **Push to your branch:** `git push origin feature/your-feature-name`.
-7. **Create a Pull Request** on the original repository.
-
-> This project uses the Fork + Pull Request workflow. Anyone is welcome to fork the repo, make changes and submit a PR.
-
-Please also feel free to open **Issues** for bug reports, feature requests, feedback or share how you use it.
-
----
-
-## License & Credits
-
-**License:** MIT — see the [`LICENSE`](LICENSE) file.
-
-**Credits:**
-
-- [OpenAI Whisper](https://github.com/openai/whisper)
-- [WaveSurfer.js](https://wavesurfer-js.org/)
-- [Flask](https://flask.palletsprojects.com/) + [Flask-SocketIO](https://flask-socketio.readthedocs.io/)
-- [Remix Icon](https://remixicon.com/)
-- APIs: OpenAI, Deepgram, Gladia & ElevenLabs
+[contributing-shield]: https://img.shields.io/badge/Contributing-5f43f2?style=for-the-badge&color=0b0b0b
